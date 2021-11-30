@@ -53,6 +53,13 @@ section {
     border: solid 2px var(--color1);
 }
 
+.main-section {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+
+}
+
 header {
     display: flex;
     justify-content: flex-end;
@@ -88,4 +95,15 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+.cup-images {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 300px;
 }
