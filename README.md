@@ -14,6 +14,23 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 1) **Think about how to validate each of your features according to a Definition of Done**
 1) **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
 
+HTML ELEMENTS:
+-Three cup images
+  why?: so the user can see if they guessed correctly.
+  how: creating an event where the original img is replaced with an img of a ball underneath the cup showing the correct cup.
+-Three buttons
+  why?: So the user can click which cup they think the ball is under, and when they click on it.
+  how: having an addEventListener.
+-Three Divs for win, loss, total games played
+  why?: To keep track of those items of state
+  how: making it so when the buttons are pressed and whether or not its a win or a loss the guesses will increment. 
+
+  EVENTS:
+  -button clicks
+  -on button clicks one of the three imgs will be replaced with a correct-cup.png.
+  -constant change of state on button clicks.
+
+
 Additional considerations:
 - Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
 - Consider your data model. 
