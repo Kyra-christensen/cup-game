@@ -23,12 +23,84 @@ console.log(totalEl);
 let wins = 0;
 let total = 0;
 
+ 
 // set event listeners 
 buttonOne.addEventListener('click', () => {
-  // get user input
+    resetImages();
 
-  // use user input to update state 
+    total++;
 
-  // update DOM to reflect the new state
+    const randomCup = Math.floor(Math.random() * 3);
+    
+    if (randomCup === 0) {
+        wins++;
+
+        imgOne.src = './assets/correct-cup.png';
+    } else if (randomCup === 1) {
+        imgTwo.src = './assets/correct-cup.png';
+    } else {
+        imgThree.src = './assets/correct-cup.png';
+    }
+
+    winsLossesandTotal();
   
 });
+
+buttonTwo.addEventListener('click', () => {
+    resetImages();
+
+    total++;
+
+    const randomCup = Math.floor(Math.random() * 3);
+
+    if (randomCup === 0) {
+        wins++;
+
+        imgOne.src = './assets/correct-cup.png';
+
+    } else if (randomCup === 1) {
+        imgTwo.src = './assets/correct-cup.png';
+
+    } else {
+        imgThree.src = './assets/correct-cup.png';
+    }
+
+    winsLossesandTotal();
+
+});
+
+buttonThree.addEventListener('click', () => {
+    resetImages();
+
+    total++;
+
+    const randomCup = Math.floor(Math.random() * 3);
+
+    if (randomCup === 0) {
+        wins++;
+
+        imgOne.src = './assets/correct-cup.png';
+
+    } else if (randomCup === 1) {
+        imgTwo.src = './assets/correct-cup.png';
+
+    } else {
+        imgThree.src = './assets/correct-cup.png';
+    }
+
+    winsLossesandTotal();
+
+});
+
+function resetImages(){
+    imgOne.src = './assets/cup.png';
+    imgTwo.src = './assets/cup.png';
+    imgThree.src = './assets/cup.png';
+}
+
+function winsLossesandTotal(){
+    winEl.textContent = wins;
+    lossesEl.textContent = total - wins;
+    totalEl.textContent = total;
+}
+   
